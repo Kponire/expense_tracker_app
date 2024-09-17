@@ -40,7 +40,7 @@ const SideNav = () => {
   return (
     <div className='h-screen p-5 border shadow-sm'>
         {/* <Image src={} alt='logo' width={160} height={10} /> */}
-        SN
+        <div className='font-bold text-3xl'> Trackr </div>
         <div className='mt-5'>
             {menuList.map((menu, index) => (
                 <Link href={menu.path} key={index}>
@@ -55,7 +55,7 @@ const SideNav = () => {
         </div>
         <div className='fixed bottom-10 p-5 flex gap-2 items-center'>
             <UserButton />
-            profile
+            Profile
         </div>
     </div>
   )
